@@ -65,8 +65,6 @@ public:
 	}
 	~card() {
 
-		
-		
 	}
 protected:
 	string svv, name_bank;
