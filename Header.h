@@ -8,24 +8,19 @@ class card {
 private:
 	string card_id;
 	string type, currency_type;
-
 public:
 	string color;
-	int lastn;
+	int last_four_digits;
 
-	//card()
-
-	
 	card() {
 
 		card_id = "0" ;
 		type = "0";
 		currency_type = "0";
 		color = "0";
-		lastn = 0;
+		last_four_digits = 0;
 		svv = "0";
 		name_bank = "0";
-		
 	}
 	void enter() {
 		cout << "Enter card ID =";
@@ -42,13 +37,9 @@ public:
 		cin >> svv;
 		cout << "Enter name of bank =";
 		cin >> name_bank;
-
-
-
 	}
-	void show() {
-		
 
+	void show() {
 		cout << endl << endl << "your card ID is =" << card_id << endl;
 
 		cout << "your card type is =" << type << endl;
@@ -57,14 +48,13 @@ public:
 
 		cout << "your card color is =" << color << endl;
 
-		cout << "your last Four digits are =" << lastn << endl;
+		cout << "your last Four digits are =" << last_four_digits << endl;
 
 		cout << "your svv code is =" << svv << endl;
 
 		cout << "your bank name is =" << name_bank << endl<<endl;
 	}
 	~card() {
-
 	}
 protected:
 	string svv, name_bank;
